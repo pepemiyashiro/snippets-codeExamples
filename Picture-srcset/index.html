@@ -10,13 +10,23 @@
   <title>Picture srcset</title>
   <script>
     // Detects if has sizes attribute support
-    if ( !('sizes' in document.createElement('img')) ) {
-      document.createElement('picture');
-      var script = document.createElement('script');
-      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js';
-      script.async = true;
-      document.head.appendChild(script);
-    }
+
+    // Compressed version
+    (function(){if(!('sizes'in document.createElement('img'))){document.createElement('picture');var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js';s.async=true;document.head.appendChild(s);}})()
+
+    
+    // Uncompressed version
+
+    // (function(){
+    //   if (!('sizes' in document.createElement('img'))) {
+    //     document.createElement('picture');
+    //     var s = document.createElement('script');
+    //     s.src = 'https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js';
+    //     s.async = true;
+    //     document.head.appendChild(s);
+    //   }
+    // })()
+
   </script>
 </head>
 <body>
