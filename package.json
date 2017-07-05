@@ -1,14 +1,22 @@
 {
   "name": "snippets",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "browser-sync start --server . --files ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepemiyashiro/snippets-codeExamples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pepemiyashiro/snippets-codeExamples/issues"
+  },
+  "homepage": "https://github.com/pepemiyashiro/snippets-codeExamples#readme",
+  "description": ""
 }
