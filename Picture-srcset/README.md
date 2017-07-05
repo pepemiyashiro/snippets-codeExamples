@@ -1,6 +1,7 @@
 # Picture srcset
 This example allows to use the image srcset without using the picturefill (well just for ie11).
-Support:
+
+## Support:
 * Chrome
 * Safari
 * Firefox
@@ -8,7 +9,7 @@ Support:
 * Edge
 * Opera (not tested yet)
 
-References
+## References
 - http://jpscaletti.com/es/blog/srcset-imagenes-responsive-sin-js/
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 
