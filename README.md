@@ -1,4 +1,5 @@
 # snippets-codeExamples
 
-Run the server
+Install dependencies and Run the server
+`npm install`
 `npm run server`
