@@ -9,6 +9,6 @@ Support:
 * Opera (not tested yet)
 
 References
-- jpscaletti.com/es/blog/srcset-imagenes-responsive-sin-js/
+- http://jpscaletti.com/es/blog/srcset-imagenes-responsive-sin-js/
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 
