@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="main.css">
   <title>Picture srcset</title>
   <script>
-    // Detects if has sizes attribute support
-
-    // Compressed version
+    // ==================================================
+    // Minified version
+    // ==================================================
     (function(){if(!('sizes'in document.createElement('img'))){document.createElement('picture');var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js';s.async=true;document.head.appendChild(s);}})()
-
     
+    // ==================================================
     // Uncompressed version
-
+    // ==================================================
     // (function(){
     //   if (!('sizes' in document.createElement('img'))) {
     //     document.createElement('picture');
@@ -35,8 +35,10 @@
       <img alt="Image Sets!"
            class="figure__image"
            sizes="(min-width: 400px) 800px, 100vw"
-           src="images/totoro-400.jpg"
-           srcset="images/totoro-400.jpg 400w, images/totoro-800.jpg 800w, images/totoro-1200.jpg 1200w, images/totoro-1600.jpg 1600w"/>
+           srcset="images/totoro-400.jpg 400w, 
+                  images/totoro-800.jpg 800w,
+                  images/totoro-1200.jpg 1200w,
+                  images/totoro-1600.jpg 1600w"/>
       <figcaption>
         Using sizes attribute setted to <em>(min-width: 400px) 800px, 100vw</em>, from 400px and above will set the max width of the image to 800px and it will use the best image option to be used taking in count the screen DPI.
       </figcaption>
@@ -44,7 +46,10 @@
     <figure class="figure">
       <img alt="Image Sets!"
            class="figure__image"
-           srcset="images/totoro-400.jpg 400w, images/totoro-800.jpg 800w, images/totoro-1200.jpg 1200w, images/totoro-1600.jpg 1600w"/>
+           srcset="images/totoro-400.jpg 400w,
+                  images/totoro-800.jpg 800w,
+                  images/totoro-1200.jpg 1200w,
+                  images/totoro-1600.jpg 1600w"/>
       <figcaption>
         Without sizes attribute
       </figcaption>
