@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Picture srcset</title>
+  <script>
+    if (! 'sizes' in window.document.createElement('img')) {
+      console.log('Using Picturefill');
+      document.createElement('picture');
+      var script = window.document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js';
+      script.async = true;
+      script.insertBefore(window.document.getElementsByTagName('script')[0]);
+    }
+  </script>
+</head>
+<body>
+  <div class="picture-container">
+    <figure class="figure">
+      <img alt="Image Sets!"
+           class="figure__image"
+           sizes="(min-width: 400px) 800px, 100vw"
+           srcset="images/totoro-400.jpg 400w, images/totoro-800.jpg 800w, images/totoro-1200.jpg 1200w, images/totoro-1600.jpg 1600w"/>
+      <figcaption>
+        Using sizes attribute setted to <em>(min-width: 400px) 800px, 100vw</em>, from 400px and above will set the max width of the image to 800px and it will use the best image option to be used taking in count the screen DPI.
+      </figcaption>
+    </figure>
+    <figure class="figure">
+      <img alt="Image Sets!"
+           class="figure__image"
+           srcset="images/totoro-400.jpg 400w, images/totoro-800.jpg 800w, images/totoro-1200.jpg 1200w, images/totoro-1600.jpg 1600w"/>
+      <figcaption>
+        Without sizes attribute
+      </figcaption>
+    </figure>
+  </div>
+</body>
+</html>
