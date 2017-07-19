@@ -1,0 +1,20 @@
+{
+  "name": "rw-star-rating",
+  "description": "",
+  "main": "rw-star-rating.js",
+  "authors": [
+    "pepemiyashiro <pepe.miyashiro@beauthentic.digital>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/pepemiyashiro/snippets-codeExamples",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.3"
+  }
+}

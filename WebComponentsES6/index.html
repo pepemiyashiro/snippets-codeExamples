@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Practical Guide to Vanilla Web Components</title>
+    <script src="bower_components/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="dist/custom-style-interface.min.js"></script>
+    <style class="document-style">
+        html, body {
+            font-size: 1.5em;
+        }
+        rw-star-rating {
+            --star-default-color: #333;
+            --star-selected-color: red;
+            --star-hover-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <rw-star-rating></rw-star-rating>
+    <script>
+        window.addEventListener("WebComponentsReady", function () {
+            var $script = document.createElement("script");
+            $script.src = "dist/rw-star-rating.js";
+            document.head.appendChild($script);
+        });
+        if (window.ShadyCSS && ShadyCSS.CustomStyleInterface) {
+            ShadyCSS.CustomStyleInterface.addCustomStyle(document.querySelector("style.document-style"));
+        }
+    </script>
+</body>
+</html>
